@@ -17,7 +17,8 @@ Take a REST with django-nap: APIs for Django
 .. image:: https://pypip.in/v/django-nap/badge.png
            :target: https://crate.io/packages/django-nap
 
-In the spirit of the Unix philosophy, Nap provides a few tools which each do one thing, and do it well.  They are:
+In the spirit of the Unix philosophy, Nap provides a few tools which each do
+one thing, and do it well.  They are:
 
 1. Serialiser
 
@@ -34,6 +35,11 @@ In the spirit of the Unix philosophy, Nap provides a few tools which each do one
    A mixin for Django's class-based views which allows a single url to provide
    multiple RPC methods.
 
+4. Data Mapper
+
+   Alternative approach to converting objects between serialisable forms and
+   program objects.
+
 Nap does not provide the wide range of features you see in tools like Django
 REST Framework, such as rate limiting, token authentication, automatic UI, etc.
 Instead, it provides a flexible framework that makes it easy to combine with
@@ -48,10 +54,12 @@ Contents:
    serialiser/index
    serialiser/fields
    serialiser/models
+   datamapper/index
    rest/index
    rpc/index
    extras/index
    api/index
+   examples
    changelog
 
 Indices and tables

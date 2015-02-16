@@ -34,7 +34,16 @@ Quick Start
     rest.api.autodiscover()
 
     urlpatterns('',
-        (r'', include(rest.api.patterns())
+        (r'', include(rest.api.patterns())),
         ...
     )
+
+or if you're using Django 1.7, use the AppConfig:
+
+.. code-block:: python
+
+   INSTALLED_APPS = [
+       ...
+       'nap.apps.NapConfig',
+   ]
 

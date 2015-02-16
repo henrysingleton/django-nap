@@ -2,6 +2,34 @@
 Changelog
 =========
 
+v0.14.3
+=======
+
+Ehancements
+
++ JsonMixin.get_request_data will now handle form encoded data for PUT
+
+v0.14.2
+=======
+
+.. admonition:: WARNING: Removed module
+
+   The module nap.exceptions has been completely removed.
+
+Enhancements:
+
++ Switched custom ValidationError / ValidationErrors to django's ValidationError
++ Added DataMapper library
++ Added CBV mixins for composing API Views that use DataMappers
+
+
+v0.14.1.1
+=========
+
+Bug Fixes:
+
++ Add required `name` attribute to AppConfig [thanks bobobo1618]
+
 v0.14.1
 =======
 
@@ -21,6 +49,7 @@ Bug Fixes:
 + Raise a 404 on invalid page_size value
 + Validate the data we got in RPC View is passable as \**kwargs
 + ISO_8859_1 isn't defined in older Django versions
++ Emulate django template lookups in digattr by ignoring callables flagged 'do_not_call_in_templates'
 
 v0.14.0
 =======
